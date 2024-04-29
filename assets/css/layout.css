@@ -1,0 +1,154 @@
+@import './reset.css';
+@import './common.css';
+@import './fonts/fonts.css';
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    color: #fff;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+header.skip {
+    transform: translateY(-100%);
+
+}
+
+header .info-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 15px;
+    border-bottom: .1rem solid hsla(0, 0%, 59%, .36)
+}
+
+header .info-group .site-area {
+    display: flex;
+    gap: 20px;
+}
+
+header .info-group .contact-area {
+    display: flex;
+    align-items: center;
+}
+
+header .info-group .contact-area>* {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+header .info-group .contact-area *+*::before {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 0.9rem;
+    margin: 0 10px;
+    border-right: 1px solid #fff;
+}
+
+header .menu-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 207px;
+    border-bottom: .1rem solid hsla(0, 0%, 59%, .36)
+}
+
+header .menu-group .menu-area {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    height: 8.6rem;
+}
+
+header .menu-group .menu-area h1 {
+    width: 4.6rem;
+}
+
+header .menu-group .menu-area h1 a {
+    display: block;
+    margin: 0 -.3rem;
+}
+
+header .menu-group .menu-area .menu {}
+
+header .menu-group .menu-area .menu ul {
+    gap: 26px;
+    display: flex;
+    align-items: center;
+}
+
+.red {
+    color: #D22733
+}
+
+header .menu-group .menu-area .menu ul li {}
+
+header .menu-group .menu-area .menu ul li a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+header .menu-group .menu-area .menu ul li:nth-child(4) a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+header .menu-group .menu-area .menu ul li:nth-child(4) a:before {
+    display: inline-block;
+    width: 1px;
+    height: 2.6rem;
+    background: #fff;
+    content: '';
+}
+
+header .menu-group .util-area {
+    display: flex;
+    gap: 3.5rem;
+    ;
+}
+
+header .menu-group .util-area {}
+
+
+[class*='fonticon-']:before {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    font-family: fonticon !important;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400 !important;
+    line-height: 1;
+    text-decoration: none;
+    text-rendering: auto;
+    text-transform: none;
+    vertical-align: middle
+}
+
+.fonticon-search {
+    font-size: 2.6rem;
+}
+
+.fonticon-search:before {
+    content: "\f14b"
+}
+
+.fonticon-bag,
+.fonticon-login {
+    font-size: 2.4rem;
+}
+
+.fonticon-bag:before {
+    content: "\f10a";
+}
+
+.fonticon-login:before {
+    content: "\f133";
+}
