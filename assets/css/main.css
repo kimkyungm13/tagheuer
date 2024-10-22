@@ -141,11 +141,11 @@ section .d-rv-row {
 }
 
 
-section .contents-group {
+.sc-features .contents-group {
     width: 40%;
 }
 
-section .contents-group .list {
+.sc-features .contents-group .list {
     display: flex;
     gap: 30px;
     flex-direction: column;
@@ -153,25 +153,25 @@ section .contents-group .list {
     max-width: 410px;
 }
 
-section .contents-group .list li {
+.sc-features .contents-group .list li {
     display: flex;
     gap: 14px;
 
 }
 
-section .contents-group .img-item {
+.sc-features .contents-group .img-item {
     width: 57px;
     height: 57px;
     border-radius: 50%;
     overflow: hidden;
 }
 
-section .contents-group .img-item img {
+.sc-features .contents-group .img-item img {
     width: 100%;
     object-fit: cover;
 }
 
-section .contents-group .text-item {
+.sc-features .contents-group .text-item {
     display: flex;
     flex-direction: column;
     font-size: 1.6rem;
@@ -180,12 +180,20 @@ section .contents-group .text-item {
     flex: 1;
 }
 
-section .contents-group .text-item .top {
+.sc-features .contents-group .text-item .top {
     color: #000
 }
 
-section .contents-group .text-item .desc {
+.sc-features .contents-group .text-item .desc {
     color: #404040;
+}
+
+.sc-features.ft03 .contents-group .text-item .top {
+    color: #fff
+}
+
+.sc-features.ft03 .contents-group .text-item .desc {
+    color: #b3b3b3;
 }
 
 section .btn-arrow {
@@ -894,7 +902,7 @@ section.sc-intro .main-title span {
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 683px;
+    height: 670px;
     overflow: hidden;
 }
 

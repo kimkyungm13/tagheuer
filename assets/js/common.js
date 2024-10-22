@@ -166,7 +166,7 @@ $(function () {
             trigger: '.sc-design',
             start: '0% 100%',
             end: '100% 0%',
-            markers: 'true',
+            // markers: 'true',
             toggleClass: {
                 targets: '.sc-design',
                 className: 'black'
@@ -404,17 +404,17 @@ $(function () {
                 }
             }
         })
-        gsap.to('.sc-features.ft02', {
-            scrollTrigger: {
-                trigger: '.ft02',
-                start: '0% 0%',
-                // end: '100% 100%',
-                toggleClass: {
-                    targets: 'body',
-                    className: 'org'
-                }
-            }
-        })
+        // gsap.to('.sc-features.ft02', {
+        //     scrollTrigger: {
+        //         trigger: '.ft02',
+        //         start: '0% 0%',
+        //         // end: '100% 100%',
+        //         toggleClass: {
+        //             targets: 'body',
+        //             className: 'org'
+        //         }
+        //     }
+        // })
         gsap.to('.sc-features.ft03', {
             scrollTrigger: {
                 trigger: '.ft03',
@@ -428,7 +428,7 @@ $(function () {
                         start: '0% 100%',
                         end: '200% 00%',
                         scrub: 0,  // scrub을 true로 설정하여 애니메이션이 스크롤과 동기화되도록 함
-                        markers: true,
+                        // markers: true,
                         toggleClass: {
                             targets: 'body',
                             className: 'dark'
@@ -440,16 +440,16 @@ $(function () {
         })
 
     });
-    ScrollTrigger.create({
-        trigger: `[data-theme="orange"]`,
-        start: "0% 0%",
-        end: "100% 100%",
-        // markers: true,
-        toggleClass: {
-            targets: "body",
-            className: "org",
-        },
-    })
+    // ScrollTrigger.create({
+    //     trigger: `[data-theme="orange"]`,
+    //     start: "0% 0%",
+    //     end: "100% 100%",
+    //     markers: true,
+    //     toggleClass: {
+    //         targets: "body",
+    //         className: "org",
+    //     },
+    // })
     /** sc-wellness */
     let wellnessEl = ``;
     for (let index = 0; index < 179; index++) {
@@ -478,6 +478,18 @@ $(function () {
             }
         }
     })
+    gsap.to('.sc-wellness', {
+        scrollTrigger: {
+            trigger: '.sc-wellness',
+            start: '0% 100%',
+            end: '100% 100%',
+            // markers: true,
+            toggleClass: {
+                targets: 'body',
+                className: 'org'
+            }
+        }
+    })
     gsap.to('.sc-wellness ', {
         scrollTrigger: {
             trigger: '.sc-wellness .canvas-wrap',
@@ -490,22 +502,22 @@ $(function () {
             //     className: 'white'
             // }
         },
-        onLeave: function () {
-            gsap.to('.sc-wellness', {
-                scrollTrigger: {
-                    trigger: '.sc-wellness',
-                    start: '100% 100%',
-                    end: '100% 0%',
-                    scrub: 0,  // scrub을 true로 설정하여 애니메이션이 스크롤과 동기화되도록 함
-                    // markers: true,
-                    toggleClass: {
-                        targets: 'body',
-                        className: 'black'
-                    }
-                },
-                'clip-path': 'inset(0% 10% 0% 10%)',
-            });
-        }
+        // onLeave: function () {
+        //     gsap.to('.sc-wellness', {
+        //         scrollTrigger: {
+        //             trigger: '.sc-wellness',
+        //             start: '100% 100%',
+        //             end: '100% 0%',
+        //             scrub: 0,  // scrub을 true로 설정하여 애니메이션이 스크롤과 동기화되도록 함
+        //             // markers: true,
+        //             toggleClass: {
+        //                 targets: 'body',
+        //                 className: 'black'
+        //             }
+        //         },
+        //         'clip-path': 'inset(0% 10% 0% 10%)',
+        //     });
+        // }
     })
 
     /** sc-sport */
@@ -551,11 +563,6 @@ $(function () {
         },
         'clip-path': 'inset(0% 10% 5% 10%)',
         // 'background': '#fff'
-    }).to('.sc-sport', {
-        toggleClass: {
-            targets: 'body',
-            className: 'org'
-        }
     })
 
 
@@ -618,7 +625,7 @@ $(function () {
             trigger: '.sc-course',
             start: '0% 10%',
             end: '100% 100%',
-            scrub: 1,
+            scrub: 0,
             // markers: true,
         },
         yPercent: -5
