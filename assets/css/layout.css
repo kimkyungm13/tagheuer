@@ -247,6 +247,15 @@ header .menu-group .util-area {}
     height: 100%;
 }
 
+.dropdown-menu .container .menu-banner .content-asset {
+    height: 100%;
+}
+
+.dropdown-menu .container .menu-banner .content-asset img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
 .fonticon-search {
     font-size: 2.6rem;
