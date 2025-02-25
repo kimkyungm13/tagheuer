@@ -1,4 +1,19 @@
 $(function () {
+    document.addEventListener("DOMContentLoaded", function () {
+        const images = document.querySelectorAll("img[data-src]");
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.removeAttribute("data-src");
+                    observer.unobserve(img);
+                }
+            });
+        });
+
+        images.forEach((img) => observer.observe(img));
+    });
     /** 메뉴 스크롤 */
     let lastScroll = 0;
     $(window).scroll(function () {
@@ -135,7 +150,7 @@ $(function () {
     let crownEl = ``;
     for (let index = 0; index < 179; index++) {
         first = (index === 0) ? "on" : "";
-        crownEl += `<img src="./assets/landings/connected-e4/01.crown/${index.toString().padStart(5, '0')}.jpg" alt="" loading="lazy" class="${first}">`;
+        crownEl += `<img src="./assets/landings/connected-e4/01.crown/${index.toString().padStart(5, '0')}.jpg" alt="" class="${first}">`;
     }
     $('.sc-design .canvas-wrap').html(crownEl);
 
@@ -178,7 +193,7 @@ $(function () {
     let duoEl = ``;
     for (let index = 0; index < 179; index++) {
         first = (index === 0) ? "on" : "";
-        duoEl += `<img src="./assets/landings/connected-e4/02.duo/${index.toString().padStart(5, '0')}.jpg" loading="lazy" class="${first}" alt>`;
+        duoEl += `<img src="./assets/landings/connected-e4/02.duo/${index.toString().padStart(5, '0')}.jpg" alt="" class="${first}">`;
     }
     $('.sc-tech .canvas-wrap').html(duoEl);
     gsap.from('.sc-tech ', {
@@ -323,7 +338,7 @@ $(function () {
     let customEl = ``;
     for (let index = 0; index < 179; index++) {
         first = (index === 0) ? "on" : "";
-        customEl += `<img src="./assets/landings/connected-e4/04.custom/${index.toString().padStart(5, '0')}.jpg" loading="lazy" class="${first}" alt>`;
+        customEl += `<img src="./assets/landings/connected-e4/04.custom/${index.toString().padStart(5, '0')}.jpg" alt="" class="${first}">`;
     }
     $('.sc-custom .canvas-wrap').html(customEl);
 
@@ -454,7 +469,7 @@ $(function () {
     let wellnessEl = ``;
     for (let index = 0; index < 179; index++) {
         first = (index === 0) ? "on" : "";
-        wellnessEl += `<img src="./assets/landings/connected-e4/06.wellness/${index.toString().padStart(5, '0')}.jpg" loading="lazy" class="${first}" alt>`;
+        wellnessEl += `<img src="./assets/landings/connected-e4/06.wellness/${index.toString().padStart(5, '0')}.jpg" alt="" class="${first}">`;
     }
     $('.sc-wellness .canvas-wrap').html(wellnessEl);
 
@@ -524,7 +539,7 @@ $(function () {
     let sportEl = ``;
     for (let index = 0; index < 179; index++) {
         first = (index === 0) ? "on" : "";
-        sportEl += `<img src="./assets/landings/connected-e4/05.sport/${index.toString().padStart(5, '0')}.jpg" loading="lazy" class="${first}" alt>`;
+        sportEl += `<img src="./assets/landings/connected-e4/05.sport/${index.toString().padStart(5, '0')}.jpg" alt="" class="${first}">`;
     }
     $('.sc-sport .canvas-wrap').html(sportEl);
 
@@ -570,7 +585,7 @@ $(function () {
     let chargerEl = ``;
     for (let index = 0; index < 179; index++) {
         first = (index === 0) ? "on" : "";
-        chargerEl += `<img src="./assets/landings/connected-e4/07.charger/${index.toString().padStart(5, '0')}.jpg" loading="lazy" class="${first}" alt>`;
+        chargerEl += `<img src="./assets/landings/connected-e4/07.charger/${index.toString().padStart(5, '0')}.jpg" alt="" class="${first}">`;
     }
     $('.sc-charger .canvas-wrap').html(chargerEl);
 
