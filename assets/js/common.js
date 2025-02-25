@@ -135,7 +135,7 @@ $(function () {
     let crownEl = ``;
     for (let index = 0; index < 179; index++) {
         first = (index === 0) ? "on" : "";
-        crownEl += `<img src="./assets/landings/connected-e4/01.crown/${index.toString().padStart(5, '0')}.jpg" alt="" class="${first}">`;
+        crownEl += `<img src="./assets/landings/connected-e4/01.crown/${index.toString().padStart(5, '0')}.jpg" alt="" loading="lazy" class="${first}">`;
     }
     $('.sc-design .canvas-wrap').html(crownEl);
 
@@ -178,7 +178,7 @@ $(function () {
     let duoEl = ``;
     for (let index = 0; index < 179; index++) {
         first = (index === 0) ? "on" : "";
-        duoEl += `<img src="./assets/landings/connected-e4/02.duo/${index.toString().padStart(5, '0')}.jpg" alt="" class="${first}">`;
+        duoEl += `<img src="./assets/landings/connected-e4/02.duo/${index.toString().padStart(5, '0')}.jpg" loading="lazy" class="${first}" alt>`;
     }
     $('.sc-tech .canvas-wrap').html(duoEl);
     gsap.from('.sc-tech ', {
@@ -323,7 +323,7 @@ $(function () {
     let customEl = ``;
     for (let index = 0; index < 179; index++) {
         first = (index === 0) ? "on" : "";
-        customEl += `<img src="./assets/landings/connected-e4/04.custom/${index.toString().padStart(5, '0')}.jpg" alt="" class="${first}">`;
+        customEl += `<img src="./assets/landings/connected-e4/04.custom/${index.toString().padStart(5, '0')}.jpg" loading="lazy" class="${first}" alt>`;
     }
     $('.sc-custom .canvas-wrap').html(customEl);
 
@@ -454,7 +454,7 @@ $(function () {
     let wellnessEl = ``;
     for (let index = 0; index < 179; index++) {
         first = (index === 0) ? "on" : "";
-        wellnessEl += `<img src="./assets/landings/connected-e4/06.wellness/${index.toString().padStart(5, '0')}.jpg" alt="" class="${first}">`;
+        wellnessEl += `<img src="./assets/landings/connected-e4/06.wellness/${index.toString().padStart(5, '0')}.jpg" loading="lazy" class="${first}" alt>`;
     }
     $('.sc-wellness .canvas-wrap').html(wellnessEl);
 
@@ -524,7 +524,7 @@ $(function () {
     let sportEl = ``;
     for (let index = 0; index < 179; index++) {
         first = (index === 0) ? "on" : "";
-        sportEl += `<img src="./assets/landings/connected-e4/05.sport/${index.toString().padStart(5, '0')}.jpg" alt="" class="${first}">`;
+        sportEl += `<img src="./assets/landings/connected-e4/05.sport/${index.toString().padStart(5, '0')}.jpg" loading="lazy" class="${first}" alt>`;
     }
     $('.sc-sport .canvas-wrap').html(sportEl);
 
@@ -570,7 +570,7 @@ $(function () {
     let chargerEl = ``;
     for (let index = 0; index < 179; index++) {
         first = (index === 0) ? "on" : "";
-        chargerEl += `<img src="./assets/landings/connected-e4/07.charger/${index.toString().padStart(5, '0')}.jpg" alt="" class="${first}">`;
+        chargerEl += `<img src="./assets/landings/connected-e4/07.charger/${index.toString().padStart(5, '0')}.jpg" loading="lazy" class="${first}" alt>`;
     }
     $('.sc-charger .canvas-wrap').html(chargerEl);
 
