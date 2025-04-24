@@ -5,12 +5,12 @@
 
 
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     color: #fff;
     width: 100%;
-    z-index: 2
+    z-index: 2;
 }
 
 header.wheel {}
@@ -73,6 +73,7 @@ header .menu-group {
     display: flex;
     justify-content: space-between;
     padding: 0 207px;
+    overflow: hidden;
     border-bottom: .1rem solid hsla(0, 0%, 59%, .36);
     transition: all 0.3s;
     background: #000;

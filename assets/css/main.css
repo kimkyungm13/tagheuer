@@ -33,7 +33,8 @@ canvas {
 }
 
 #wrapper {
-    border-top: 122px solid #000
+    width: 100%;
+    min-width: 1440px;
 }
 
 #main {
@@ -42,6 +43,7 @@ canvas {
 }
 
 .banner-group {
+    position: sticky;
     display: flex;
     justify-content: space-between;
     padding: .7rem 207px;
@@ -49,7 +51,6 @@ canvas {
     background: #000;
     z-index: 3;
     transition: all 0.3s;
-    position: fixed;
     top: 122px;
     left: 0;
     right: 0;
